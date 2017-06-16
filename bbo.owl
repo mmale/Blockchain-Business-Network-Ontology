@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#ContractExecution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decentralized"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArchitecture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContractValidation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransactionExecution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Validator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContractCall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Initiator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NetworkStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distributed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NetworkAchitecture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Committer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClientServer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Centralized"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Participant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParticipant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrivateNetwork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Communication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransactionCall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Broadcaster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransactionValidation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmartContract"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PeerToPeer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PermissionedNetwork"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Broadcaster"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Centralized"/>
+        <Class IRI="#NetworkAchitecture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClientServer"/>
+        <Class IRI="#NetworkStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Committer"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContractCall"/>
+        <Class IRI="#Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContractExecution"/>
+        <Class IRI="#Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContractValidation"/>
+        <Class IRI="#Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decentralized"/>
+        <Class IRI="#NetworkAchitecture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Device"/>
+        <Class IRI="#Participant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Distributed"/>
+        <Class IRI="#NetworkAchitecture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Initiator"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observer"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeerToPeer"/>
+        <Class IRI="#NetworkStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PermissionedNetwork"/>
+        <Class IRI="#Network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Participant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrivateNetwork"/>
+        <Class IRI="#Network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicNetwork"/>
+        <Class IRI="#Network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmartContract"/>
+        <Class IRI="#Participant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransactionCall"/>
+        <Class IRI="#Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransactionExecution"/>
+        <Class IRI="#Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransactionValidation"/>
+        <Class IRI="#Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Validator"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasArchitecture"/>
+        <Class IRI="#Network"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParticipant"/>
+        <Class IRI="#Network"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#Participant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStructure"/>
+        <Class IRI="#Network"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasArchitecture"/>
+        <Class IRI="#NetworkAchitecture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParticipant"/>
+        <Class IRI="#Participant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStructure"/>
+        <Class IRI="#NetworkStructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInvolvedIn"/>
+        <Class IRI="#Communication"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

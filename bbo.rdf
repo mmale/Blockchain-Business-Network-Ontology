@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#"
+     xml:base="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#hasArchitecture -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#hasArchitecture">
+        <rdfs:domain rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Network"/>
+        <rdfs:range rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#NetworkAchitecture"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#hasParticipant">
+        <rdfs:domain rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Network"/>
+        <rdfs:range rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Participant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#hasRole -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#hasRole">
+        <rdfs:domain rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Participant"/>
+        <rdfs:range rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#hasStructure -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#hasStructure">
+        <rdfs:domain rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Network"/>
+        <rdfs:range rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#NetworkStructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#isInvolvedIn -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#isInvolvedIn">
+        <rdfs:domain rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Role"/>
+        <rdfs:range rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Communication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Broadcaster -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Broadcaster">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Centralized -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Centralized">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#NetworkAchitecture"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#ClientServer -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#ClientServer">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#NetworkStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Committer -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Committer">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Communication -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Communication"/>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#ContractCall -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#ContractCall">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Communication"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#ContractExecution -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#ContractExecution">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Communication"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#ContractValidation -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#ContractValidation">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Communication"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Decentralized -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Decentralized">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#NetworkAchitecture"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Device -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Device">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Participant"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Distributed -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Distributed">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#NetworkAchitecture"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Initiator -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Initiator">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Network -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Network"/>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#NetworkAchitecture -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#NetworkAchitecture"/>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#NetworkStructure -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#NetworkStructure"/>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Observer -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Observer">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Participant -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Participant"/>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#PeerToPeer -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#PeerToPeer">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#NetworkStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#PermissionedNetwork -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#PermissionedNetwork">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Network"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Person -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Person">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Participant"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#PrivateNetwork -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#PrivateNetwork">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Network"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#PublicNetwork -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#PublicNetwork">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Network"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Role -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Role"/>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#SmartContract -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#SmartContract">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Participant"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#TransactionCall -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#TransactionCall">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Communication"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#TransactionExecution -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#TransactionExecution">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Communication"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#TransactionValidation -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#TransactionValidation">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Communication"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Validator -->
+
+    <owl:Class rdf:about="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Validator">
+        <rdfs:subClassOf rdf:resource="https://github.com/mmale/Blockchain-Business-Network-Ontology/bbo.owl#Role"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
